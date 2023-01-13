@@ -670,7 +670,7 @@ class instagram:
                 f"Instagram {str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} (25/7.1.1; 160dpi; 540x{((999))}; Realme; e- qcom; id_ID; 430370703)",
                 f"Instagram {str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} (25/7.1.1; 160dpi; 540x{((999))}; Realme; e- qcom; id_ID; 430370703)",
                 f"Instagram {str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Android {str(rr(4,12))}; RMX{str(rr(1111,9999))} (25/7.1.1; 160dpi; 540x{((999))}; Realme; e- qcom; id_ID; 430370703"])
-                token=s.get('https://z-p42.www.instagram.com/api/v1/web/accounts/one_tap_web_login/')
+                token=s.get('https://z-p42.www.instagram.com/api/v1/web/accounts/login/onetaps/')
                 headers = {
                     'Host':'www.instagram.com',
                     'connection':'keep-alive',
@@ -690,7 +690,7 @@ class instagram:
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://z-p42.www.instagram.com/accounts/login/onetaps/',
+                    'referer':'https://z-p42.www.instagram.com/api/v1/web/accounts/login/onetaps/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
