@@ -638,20 +638,24 @@ class instagram:
                 nip=random.choice(prox)
                 proxs= {'http': 'socks5://'+nip}
                 ua = random.choice(uasm)
-                aa='Mozilla/5.0 (Linux; Android'
+                aa='Mozilla/5.0 (iPhone; CPU'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'SMN-'
+                c= 'IOS-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210/'
+                g='AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
                 k=random.randrange(40,150)
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-                uafake=f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; TECNO BD1 {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_PT;FBAV/332.0.0.22.108;]"
+                uafake = random.choice([
+                f"instagram (iPhone; CPU {str(rr(4,12))}; Mac OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone11,1;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]",
+                f"instagram (iPhone; CPU {str(rr(4,12))}; Mac OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]",
+   .            f"instagram (iPhone; CPU {str(rr(4,12))}; Mac OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone13,1;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]",
+ .              f"instagram (iPhone; CPU {str(rr(4,12))};Mac OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone14,1;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]"])
                 token=s.get('https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/')
                 headers = {
                     'Host':'i.instagram.com',
