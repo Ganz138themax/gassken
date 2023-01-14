@@ -708,7 +708,7 @@ class instagram:
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
                     io=f'Nama     : {nama}\nUsername : {user}\nPassword : {pw}\nPengikut : {pengikut}\nMengikuti: {mengikut}\nPostingan: {postingan}\nUserAgent: {uafake}'
-                    oi = nel(io, style='blue')
+                    oi = nel(io, style='green')
                     print('\n')
                     cetak(nel(oi, title=f'{M2} • {K2} • {H2} • {O2} SUCCESS {day}{H2} • {K2} • {M2} • '))
                     
