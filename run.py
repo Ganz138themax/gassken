@@ -640,35 +640,33 @@ class instagram:
                 ua = random.choice(uasm)
                 aa='Mozilla/5.0 (Linux; Android'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'RMX-'
+                c= 'SMN-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36/'
+                g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210/'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
                 k=random.randrange(40,150)
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-                uafake=f"Instagram (Linux; Android {str(rr(4,12))}; RMX{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+                uafake=f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; TECNO BD1 {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_PT;FBAV/332.0.0.22.108;]"
                 token=s.get('https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/')
                 headers = {
                     'Host':'www.instagram.com',
                     'connection':'keep-alive',
-                    'sec-ch-ua':'"Chromium";v="105", "Not)A;Brand";v="8"',
                     'x-ig-app-id':'1217981644879628',
                     'x-ig-www-claim':'0',
                     'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
                     'sec-ch-ua-mobile': '?0',
-                    'sec-ch-ua-platform': '"Windows"',
                     'Sec-Fetch-Dest': 'document',
                     'Sec-Fetch-Mode': 'navigate','Sec-Fetch-Site': 'same-origin',
                     'Sec-Fetch-User': '?1',
                     'Upgrade-Insecure-Requests': '1',
                     'x-instagram-ajax':'9080db6b6a51',
                     'content-type':'application/x-www-form-urlencoded',
-                    'accept':'*/*',
+                    'accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                     'x-requested-with':'mark.via.gp',
                     'x-asbd-id':'198387',
                     'user-agent': uaku,
@@ -731,7 +729,7 @@ class instagram:
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
                 'x-instagram-ajax': '91a4c055cfdf',
                 'content-type': 'application/x-www-form-urlencoded',
-                'accept': '*/*',
+                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                 'user-agent': random.choice(open("ua.txt","r").read().splitlines()),
                 'x-requested-with': 'mark.via.gp',
                 'x-csrftoken': crf_token,
