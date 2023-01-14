@@ -654,7 +654,7 @@ class instagram:
                 uafake=f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; TECNO BD1 {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_PT;FBAV/332.0.0.22.108;]"
                 token=s.get('https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/')
                 headers = {
-                    'Host':'www.instagram.com',
+                    'Host':'i.instagram.com',
                     'connection':'keep-alive',
                     'x-ig-app-id':'1217981644879628',
                     'x-ig-www-claim':'0',
@@ -672,7 +672,7 @@ class instagram:
                     'user-agent': uaku,
                     'x-csrftoken':token.cookies['csrftoken'],
                     'origin':'https://www.instagram.com',
-                    'sec-ch-ua-platform': '"Windows"',
+                    'sec-ch-ua-platform': '"Android"',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
                     'referer':'https://z-p42.www.instagram.com/api/v1/web/accounts/login/ajax/',
@@ -725,7 +725,7 @@ class instagram:
             token=s.get("https://www.instagram.com/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
-                'authority': 'www.instagram.com',
+                'authority': 'i.instagram.com',
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
                 'x-instagram-ajax': '91a4c055cfdf',
                 'content-type': 'application/x-www-form-urlencoded',
@@ -735,7 +735,7 @@ class instagram:
                 'x-csrftoken': crf_token,
                 'x-ig-app-id': '1217981644879628',
                 'origin': 'https://www.instagram.com',
-                'sec-ch-ua-platform': '"Windows"',
+                'sec-ch-ua-platform': '"Android"',
                 'sec-fetch-site': 'same-origin',
                 'sec-fetch-mode': 'cors',
                 'sec-fetch-dest': 'empty',
