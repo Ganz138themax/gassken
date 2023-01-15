@@ -636,11 +636,11 @@ class instagram:
                 ua = random.choice(uasm)
                 aa='Mozilla/5.0 (Linux; Android'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'ONEPLUS-'
+                c= 'SMN-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0/'
+                g='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76/'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
@@ -648,12 +648,12 @@ class instagram:
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
                 uafake = random.choice([
-                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; ONEPLUS A5010 {str(rr(1111,9999))} Build/OPR6.170623.013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36NULL/",
-                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; ONEPLUS A5010 {str(rr(1111,9999))} Build/OPR6.170623.013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36NULL/",
-                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; ONEPLUS A5010 {str(rr(1111,9999))} Build/OPR6.170623.013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36NULL/"])
+                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SAMSUNG SM-{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) Build/OPR6.170623.013) Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/E7FBAF/",
+                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SAMSUNG SM-{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) Build/OPR6.170623.013) Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/E7FBAF/",
+                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SAMSUNG SM-{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) Build/OPR6.170623.013) Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/E7FBAF/"])
                 token=s.get('https://www.instagram.com/api/v1/web/accounts/login/ajax/')
                 headers = {
-                    'Host':'www.instagram.com',
+                    'Host':'i.instagram.com',
                     'connection':'keep-alive',
                     'sec-ch-ua':'"Chromium";v="105", "Not)A;Brand";v="8"',
                     'x-ig-app-id':'1217981644879628',
@@ -722,7 +722,7 @@ class instagram:
             token=s.get("https://www.instagram.com/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
-                'authority': 'www.instagram.com',
+                'authority': 'i.instagram.com',
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
                 'x-instagram-ajax': '91a4c055cfdf',
                 'content-type': 'application/x-www-form-urlencoded',
