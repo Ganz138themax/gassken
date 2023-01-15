@@ -634,13 +634,13 @@ class instagram:
                 nip=random.choice(prox)
                 proxs= {'http': 'socks5://'+nip}
                 ua = random.choice(uasm)
-                aa='Instagram (iPhone; CPU'
+                aa='Mozilla/5.0 (Linux; Android'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'IOS-'
+                c= 'ONEPLUS-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/537.36/'
+                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0/'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
@@ -648,9 +648,9 @@ class instagram:
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
                 uafake = random.choice([
-                f"Instagram ((iPhone; CPU {str(rr(4,12))}; MAC OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148/",
-                f"Instagram ((iPhone; CPU {str(rr(4,12))}; MAC OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148/",
-                f"Instagram ((iPhone; CPU {str(rr(4,12))}; MAC OS X) {str(rr(1111,9999))} AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148/"])
+                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; ONEPLUS A5010 {str(rr(1111,9999))} Build/OPR6.170623.013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36NULL/",
+                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; ONEPLUS A5010 {str(rr(1111,9999))} Build/OPR6.170623.013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36NULL/",
+                f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; ONEPLUS A5010 {str(rr(1111,9999))} Build/OPR6.170623.013) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36NULL/"])
                 token=s.get('https://www.instagram.com/api/v1/web/accounts/login/ajax/')
                 headers = {
                     'Host':'www.instagram.com',
