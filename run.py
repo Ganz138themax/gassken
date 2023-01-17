@@ -706,7 +706,7 @@ class instagram:
                     break
                 
                 elif 'ip_block' in str(x.text):
-                    sys.stdout.write(f"\r[{U}!{C}] {U}IP DI BLOKIR ON OFF MODE PESAWAT{C}");sys.stdout.flush();sleep(0);os.system("play-audio data/ip.mp3")
+                    sys.stdout.write(f"\r[{U}!{C}] {U}IP DI BLOKIR ON OFF MODE PESAWAT{C}");sys.stdout.flush()
                     self.crackAPI(user,pas)
                 else:
                     continue
