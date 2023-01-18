@@ -1044,7 +1044,7 @@ class instagram:
                     "optIntoOneTap": 'false',
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": "{}"}
-                x=s.post("https://z-p42.www.instagram.com/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
+                x=s.post("https://www.instagram.com/accounts/api/v1/login/ajax/",headers=headers,data=param,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
@@ -1085,7 +1085,7 @@ class instagram:
             token=s.get("https://www.instagram.com/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
-                'authority': 'https://z-p42.www.instagram.com',
+                'authority': 'https://www.instagram.com',
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
                 'x-instagram-ajax': '91a4c055cfdf',
                 'sec-ch-ua-platform': '"Windows"',
@@ -1095,7 +1095,7 @@ class instagram:
                 'x-requested-with': 'XMLHttpRequest',
                 'x-csrftoken': crf_token,
                 'x-ig-app-id': '1217981644879628',
-                'origin': 'https://z-p42-instagram.c10r.instagram.com',
+                'origin': 'https://www.instagram.com',
                 'sec-fetch-site': 'same-origin',
                 'sec-fetch-mode': 'cors',
                 'sec-fetch-dest': 'empty',
