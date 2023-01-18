@@ -1044,7 +1044,7 @@ class instagram:
                     "optIntoOneTap": 'false',
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": "{}"}
-                x=s.post("https://www.instagram.com/accounts/api/v1/login/ajax/",headers=headers,data=param,proxies=proxs)
+                x=s.post("https://www.instagram.com/accounts/api/login",headers=headers,data=param,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
@@ -1111,7 +1111,7 @@ class instagram:
                 "stopDeletionNonce": "",
                 "trustedDeviceRecords": {}
             }
-            x=s.post("https://z-p42.www.instagram.com/login/ajax/",data=param);sleep(1)
+            x=s.post("https://www.instagram.com/login/ajax/",data=param);sleep(1)
             x_jason=json.loads(x.text)
             if "userId" in x.text:
                 nama,pengikut,mengikut,postingan=self.APIinfo(user)
