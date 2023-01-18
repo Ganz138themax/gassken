@@ -1030,7 +1030,7 @@ class instagram:
                     'x-asbd-id':'198387',
                     'user-agent': uaku,
                     'x-csrftoken':token.cookies['csrftoken'],
-                    'sec-ch-ua-platform': '"Linux"',
+                    'sec-ch-ua-platform': '"Android"',
                     'origin':'https://www.instagram.com',
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
