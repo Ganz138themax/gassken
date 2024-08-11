@@ -3,7 +3,7 @@ try:
     import re, requests, json, random, time, urllib, uuid, hashlib, os, sys, base64
     import urllib, hmac, string
     from rich.tree import Tree
-    from rich import print as printf
+    from rich import prin as printf
     from rich.console import Console
     from rich.panel import Panel as Pan
     from datetime import datetime
