@@ -720,7 +720,7 @@ class instagram:
                 "Content-Length": str(len(log_data)),
                 "sec-ch-ua": '"Not A(Brand";v="99", "Android WebView";v="121", "Chromium";v="121"',
                 "sec-ch-ua-mobile": "?1",
-                “x-csrftoken”: token,
+                "x-csrftoken": token,
                 "User-Agent": ua,
                 "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
                 "sec-ch-ua-platform-version": '""',
