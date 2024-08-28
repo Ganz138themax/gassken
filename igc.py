@@ -161,7 +161,8 @@ _________________________________________
 __  ___/__  __ \__  ____/__  ____/__  __ \
 _____ \__  /_/ /_  __/  __  __/  __  / / /
 ____/ /_  ____/_  /___  _  /___  _  /_/ / 
-/____/ /_/     /_____/  /_____/  /_____/   {M2}•{K2}•{H2}•{O2} BRUTE FORCE INSTAGRAM🔥 {H2}•{K2}•{M2}•{R2}
+/____/ /_/     /_____/  /_____/  /_____/   
+{M2}•{K2}•{H2}•{O2} BRUTE FORCE INSTAGRAM🔥 {H2}•{K2}•{M2}•{R2}
                       ''', style='purple ',
  title=f'{M2}•{H2} PREMIUM TOOLS {M2}•{P2}', subtitle=f'• {P2}{waktu()}{U2} •'))
 
@@ -1007,7 +1008,7 @@ if __name__=='__main__':
 	         SORA.update(ki)
 	         ko = sor.get('https://pastebin.com/raw/8NiC5ayu').json()
 	         SORA1.update(ko)
-	         cek_lisensi_aktif()
+	         login_kamu()
 	except requests.exceptions.ConnectionError:
 		print(f'{P}[{M}!{P}] koneksi internet anda bermasalah');exit()
 
