@@ -734,6 +734,7 @@ class instagram:
                   'referer': 'https://www.instagram.com/accounts/login/?source=reset_password',
                   'accept-encoding': 'gzip, deflate, br',
                   'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
+                param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
                     "username": user,
                     "queryParams": '{"source":"reset_password"}',
