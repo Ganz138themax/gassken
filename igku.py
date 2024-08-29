@@ -116,7 +116,7 @@ for xc in range(1000):
     d = f"Mozilla/5.0 (Linux; Android 10; M2006C3LII Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(73,99))}.0.{str(rr(4500,4900))}.{str(rr(75,150))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,272))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (29/10; 3200; 720x1449; Xiaomi/Redmi; M2006C3LII; dandelion; mt6762; en_GB; {str(rr(422222222,499999999))})"
     f = f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; DN2101 Build/RP1A.{str(rr(111111,199999))}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,150))}.0.{str(rr(5500,5900))}.{str(rr(73,99))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (30/{str(rr(9,12))}; 4800; 1080x2293; OnePlus; DN2101; OP515BL1; mt6893; es_LA; {str(rr(422222222,499999999))})"
     g= f"Mozilla/5.0 (Linux; Android {str(rr(9,12))}; Redmi Note 8T Build/PKQ1.{str(rr(211111,299999))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,150))}.0.{str(rr(5500,5900))}.{str(rr(73,150))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (28/{str(rr(9,12))}; 4400; 1080x2130; Xiaomi/xiaomi; Redmi Note 8T; willow; qcom; en_US; {str(rr(422222222,499999999))})"
-    h= f"Mozilla/5.0 (Linux; Android 13; M2102J20SG Build/TKQ1.221013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(73,99))}.0.{str(rr(4500,4900))}.{str(rr(75,150))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (33/{str(rr(9,12))}; 4800; 1080x2167; Xiaomi/POCO; M2102J20SG; vayu; qcom; en_US; {str(rr(422222222,499999999))})"
+    h= f"Mozilla/5.0 (Linux; Android 13; M2102J22G Build/TKQ1.221013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(73,99))}.0.{str(rr(4500,4900))}.{str(rr(75,150))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (33/{str(rr(9,12))}; 4800; 1080x2167; Xiaomi/POCO; M2102J20SG; vayu; qcom; en_US; {str(rr(422222222,499999999))})"
     i= f"Mozilla/5.0 (Linux; Android {str(rr(9,13))}; SM-A205G Build/RP1A.{str(rr(111111,199999))}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,150))}.0.{str(rr(5500,5900))}.{str(rr(73,99))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (30/{str(rr(9,12))}; 3200; 720x1459; 2800; 720x1423; samsung; SM-A205G; a20; exynos7884B; pt_BR; {str(rr(422222222,499999999))})"
     j= f"Mozilla/5.0 (Linux; Android {str(rr(9,13))}; Redmi Note 7 Build/QKQ1.{str(rr(111111,199999))}.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,150))}.0.{str(rr(5500,5900))}.{str(rr(73,99))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,99))}.{str(rr(320,390))} Android (29/{str(rr(9,12))}; 4400; 1080x2131; Xiaomi/xiaomi; Redmi Note 7; lavender; qcom; pt_BR; {str(rr(422222222,499999999))})"
     k= f"Mozilla/5.0 (Linux; Android {str(rr(9,13))}; SM-G9910 Build/TP1A.{str(rr(211111,299999))}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(75,150))}.0.{str(rr(5500,5900))}.{str(rr(73,140))} Mobile Safari/537.36 Mozilla/5.0 (Linux;{str(rr(260,290))}.0.0.{str(rr(20,90))}.{str(rr(111,199))} Android (33/{str(rr(9,12))}; 4800; 1080x2176; samsung; SM-G9910; o1q; qcom; en_US; {str(rr(411111111,499999999))})"
@@ -250,9 +250,9 @@ def User_Agent():
 def user_agent():
     resolutions = ['720x1280', '320x480', '480x800', '1024x768', '1280x720', '768x1024', '480x320']
     versions = ['GT-N7000', 'SM-N9000', 'GT-I9220', 'GT-I9100']
-    0s = ['120', '160', '320', '240']
+    dpis = ['120', '160', '320', '240']
     ver = random.choice(versions)
-    0 = random.choice(0s)
+    dpi = random.choice(dpis)
     res = random.choice(resolutions)
     return (
         'Mozilla/5.0 (Linux;4.{}.{} '
