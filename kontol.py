@@ -231,7 +231,7 @@ def login_kamu():
         cookie=kuki
         instagram(ex,user,cookie).menu()
 
-defdef User_Agent():
+def User_Agent():
     dpi_phone = [
         '133','320','515','160','640','240','120'
         '800','480','225','768','216','1024']
