@@ -410,7 +410,7 @@ class instagram:
     def idAPI(self,cookie,id):
         if 'sukses' in lisensiku:
             try:
-                m=s.get("https://www.instagram.com/api/v1/si/fetch_headers/?challenge_type=signup&guid="%(id),headers={"X-IG-App-ID": "1217981644879628","cookie": cookie,"user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F721U Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 Mozilla/5.0 (Linux;294.0.0.33.87 Android (33/13; 5400; 1080x2384; samsung; SM-F721U; b4q; qcom; en_US; 500160591)"})
+                m=s.get("https://i.instagram.com/api/v1/users/web_profile_info/?username=%s"%(id),headers={"X-IG-App-ID": "1217981644879628","cookie": cookie,"user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F721U Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 Mozilla/5.0 (Linux;294.0.0.33.87 Android (33/13; 5400; 1080x2384; samsung; SM-F721U; b4q; qcom; en_US; 500160591)"})
                 m_jason=m.json()["data"]["user"]
                 idx=m_jason["id"]
             except requests.exceptions.ConnectionError:
@@ -734,7 +734,7 @@ class instagram:
                     "queryParams": '{"source":"reset_password"}',
                     "optIntoOneTap": 'false',
                     "trustedDeviceRecords": "{}"}
-                respon = ses.post("https://www.instagram.com/api/v1/web/accounts/login/ajax/", headers=headers, data=param, allow_redirects=False)
+                respon = ses.post("https://www.threads.net/api/v1/web/accounts/login/ajax/", headers=headers, data=param, allow_redirects=False)
                 babi=json.loads(respon.text)
                 if "userId" in str(babi):
                     nama,pengikut,mengikut,postingan=self.APIinfo(user)
