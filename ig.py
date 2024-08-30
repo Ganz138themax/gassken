@@ -1012,7 +1012,7 @@ if __name__=='__main__':
 	    with requests.Session() as sor:
 	         ki = sor.get('https://pastebin.com/raw/nwZAUhtG').json()
 	         SORA.update(ki)
-	         ko = sor.get('https://raw.githubusercontent.com/Ganz138themax/gassken/main/ua.txt').json()
+	         ko = sor.get('https://pastebin.com/raw/570MQmv8').json()
 	         SORA1.update(ko)
 	         login_kamu()
 	except requests.exceptions.ConnectionError:
