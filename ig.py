@@ -486,7 +486,13 @@ class instagram:
         return nomo, tanggal, email
     
     def vers(self):
-      igv=("100.0.0.17.129,100.0.0.17.129,100.0.0.17.129,100.0.0.17.129,100.0.0.17.129,100.0.0.17.129")
+      igv=("347.0.0.0.85
+,347.0.0.0.85
+,347.0.0.0.85
+,347.0.0.0.85
+,347.0.0.0.85
+,347.0.0.0.85
+")
       igve=igv.split(",")
       versi=random.choice(igve)
       return versi
@@ -497,18 +503,18 @@ class instagram:
       igv=self.vers()
       ponid=str(uuid.uuid4())
       uakuu = rc([
-      f"Instagram {igv} Android (30/11; 4800; 1080x2267; vivo; vivo 1907; 1907N; mt6768; ru_RU; 302733770)",
-      f"Instagram {igv} Android 11; vivo 1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.2.3076.56749)",
-      f"Instagram {igv} Android 11; vivo 1907) AppleWebKit/537.36 (KHTML, like Gecko) JioPages/2.0 Chrome/83.0.4103.96 Mobile Safari/537.36)",
-      f"Instagram {igv} Android 11; vivo 1907 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.101 Mobile Safari/537.36 WpsMoffice/16.3.3/armeabi-v7a/1329)",
-      f"Instagram {igv} Android 10; vivo 1907 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/333.0.0.17.119)",
-      f"Instagram {igv} Android 11; en-US; vivo 1907 Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36)",
+      f"Instagram {igv} Android {str(rr(4,12))}; 4800; 1080x2267; vivo; vivo 1907; 1907N; mt6768; ru_RU; 302733770)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.2.3076.56749)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907) AppleWebKit/537.36 (KHTML, like Gecko) JioPages/2.0 Chrome/83.0.4103.96 Mobile Safari/537.36)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.101 Mobile Safari/537.36 WpsMoffice/16.3.3/armeabi-v7a/1329)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/333.0.0.17.119)",
+      f"Instagram {igv} Android {str(rr(4,12))}; en-US; vivo 1907 Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36)",
       f"Instagram {igv} Android 11; VIVO vivo 1907 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 AlohaBrowser/3.3.2)",
-      f"Instagram {igv} Android 10; vivo 1907 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/291.0.0.44.120)",
-      f"Instagram {igv} Android 9; vivo 1907 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36 YandexSearch/7.80 YandexSearchBrowser/7.80)",
-      f"Instagram {igv} Android 11; vivo 1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36)",
-      f"Instagram {igv} Android 9; vivo 1907 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36)",
-      f"Instagram {igv} Android 10; en-US; vivo 1907_19 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.2.1303 Mobile Safari/537.36)"])
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/291.0.0.44.120)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36 YandexSearch/7.80 YandexSearchBrowser/7.80)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36)",
+      f"Instagram {igv} Android {str(rr(4,12))}; vivo 1907 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36)",
+      f"Instagram {igv} Android {str(rr(4,12))}; en-US; vivo 1907_19 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.2.1303 Mobile Safari/537.36)"])
       return uakuu
     
     def inpo(self):
