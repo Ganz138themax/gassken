@@ -93,9 +93,9 @@ USN="Mozilla/5.0 (Linux; Android 13; SM-G991B Build/TP1A.220624.014; wv) AppleWe
 
 try:
 	link = requests.get("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt").text
-	open('.socks5.txt','w').write(link)
+	open('.prox.txt','w').write(link)
 except:pass
-prox=open('.sock5.txt','r').read().splitlines()
+prox=open('.prox.txt','r').read().splitlines()
 
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],[]
 SORA={}
