@@ -486,13 +486,7 @@ class instagram:
         return nomo, tanggal, email
     
     def vers(self):
-      igv=("347.0.0.0.85
-,347.0.0.0.85
-,347.0.0.0.85
-,347.0.0.0.85
-,347.0.0.0.85
-,347.0.0.0.85
-")
+      igv=("347.0.0.0.85,347.0.0.0.85,347.0.0.0.85,347.0.0.0.85,347.0.0.0.85,347.0.0.0.85")
       igve=igv.split(",")
       versi=random.choice(igve)
       return versi
