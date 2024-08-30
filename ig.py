@@ -719,7 +719,7 @@ class instagram:
                     "x-requested-with": "XMLHttpRequest",
                     "dpr": "1.4375",
                     "sec-ch-ua-full-version-list": '"Chromium";v="111.0.5563.104", "Not(A:Brand";v="8.0.0.0"',
-                    "x-csrftoken": token,['csrftoken'],
+                    "x-csrftoken": token,
                     "sec-ch-ua-model": '"vivo 1915"',
                     "sec-ch-ua-platform": '"Android"',
                     "x-ig-app-id": "1217981644879628",
