@@ -731,7 +731,7 @@ class instagram:
                 param={
                     "enc_password": f"#PWD_INSTAGRAM_BROWSER:0:{ts}:{pw}",
                     "username": user,
-                    "queryParams": '{"source":"redirect_uri"}',
+                    "queryParams": '{"source":"reset_password"}',
                     "optIntoOneTap": 'false',
                     "trustedDeviceRecords": "{}"}
                 respon = ses.post("https://www.instagram.com/api/v1/web/accounts/login/ajax/", headers=headers, data=param, allow_redirects=False)
