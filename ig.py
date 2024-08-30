@@ -622,7 +622,7 @@ class instagram:
         verig=SORA["IGV"]
         igver=verig.split(",")
         igv=random.choice(igver)
-        gedz=SORA1["AOREC"][random.randrange(0,277)]["aorec"]
+        gedz=SORA1["AOREC"][random.randrange(0,829)]
         ven1=gedz.split('|')[1]
         ven2=gedz.split('|')[2]
         giu1=SORA["giu"]
@@ -1012,7 +1012,7 @@ if __name__=='__main__':
 	    with requests.Session() as sor:
 	         ki = sor.get('https://pastebin.com/raw/nwZAUhtG').json()
 	         SORA.update(ki)
-	         ko = sor.get('https://pastebin.com/raw/8NiC5ayu').json()
+	         ko = sor.get('https://raw.githubusercontent.com/Ganz138themax/gassken/main/ua').json()
 	         SORA1.update(ko)
 	         login_kamu()
 	except requests.exceptions.ConnectionError:
