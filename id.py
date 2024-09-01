@@ -662,7 +662,6 @@ class instagram:
                 uafake=f"Instagram 244.0.0.12.112 (iPhone12,1; iOS {str(rr(4,12))}; Mac OS X) {str(rc(aZ))}{str(rr(1111,9999))}{str(rc(aZ))}) en_US; en-US; scale=2.00; 828x1792; 383361019)"
                 token=s.get('https://z-p42.www.instagram.com/accounts/logout/ajax/')
                 headers = {
-                    headers = {
                   "Host": "www.instagram.com",
                     "content-length": "0",
                     "sec-ch-ua": '"Chromium";v="124", "Not(A:Brand";v="99"',
